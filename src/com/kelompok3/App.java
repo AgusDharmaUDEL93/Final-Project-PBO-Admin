@@ -14,7 +14,7 @@ public class App {
     public static void main (String[] args){
          try{
             Class.forName("com.mysql.jdbc.Driver");  
-            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/testjava", "admin", "admin");
+            Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/pboproject", "root", "");
             Statement stmt =con.createStatement();  
             System.out.println("Koneksi Berhasil");
         }catch (Exception e){
